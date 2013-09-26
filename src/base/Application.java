@@ -76,7 +76,7 @@ public class Application {
 		for (i = 0; i < products.size(); i++) {
 			Product tmp = products.get(i);
 			total = total + tmp.price;
-			System.out.println("Product " + (i+1) + " ($" + tmp.price + ")" + ": " + tmp.brandName + " " + tmp.productName);
+			System.out.println("Product " + (i+1) + " ($" + tmp.price + ")" + ": " + tmp.brandName + " " + tmp.productName + " URL: " + tmp.productUrl);
 		}
 		
 		System.out.println("Expected total: " + targetPrice);
