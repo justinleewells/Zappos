@@ -84,7 +84,6 @@ public class Application {
 	}
 	
 	public static Product searchByPrice(double price) {
-		
 		if (price < 50) {
 			return binaryAPICalls(price, 50);
 		} else if (price > 50 && price < 100) {
@@ -206,6 +205,7 @@ public class Application {
 		max = parsePrice(obj);
 		obj = array.get(array.size() - 1);
 		min = parsePrice(obj);
+		
 		return new CacheEntry(max, min, result);
 	}
 	
